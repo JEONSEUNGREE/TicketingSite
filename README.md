@@ -1,12 +1,15 @@
 # TicketingSite
 대규모 트래픽을 티켓팅 접속자 대기열 시스템
 
+
 ## 📌사용기술
 JAVA 17, Spring Boot 3, Spring Data Jpa, MySQL, Redis
 
 
+
 ## 🏆 프로젝트 목적
 🖋️대규모 트래픽을 고려한 티켓팅 접속자 대기열 시스템
+
 
 
 ## 🛠️기능 설명
@@ -19,8 +22,10 @@ Redis의 Queue(Sorted Set)의 Key는 유저 ID Value는 대기 시간 설정으�
 
 같은 게시판구조에 대해 기본 RDB를 사용한 Spring MVC의 방식과 Redis를 사용한 WebFlux 방식의 비교
 
+
 ## 📣성능테스트 툴
 Vegeta OpenSource
+
 
 ## 📝시나리오
 
