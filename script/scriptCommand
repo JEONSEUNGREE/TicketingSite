@@ -1,0 +1,6 @@
+# 베지터에 사용될 스크립트 설명
+# 1. 대상을 15초동안 초당 5000번 요청, 
+# 2. 타겟에는 사용할 스크립 파일명을 넣는다 
+# 3. 동시에 100개 워커에서 실행한다는 의미
+vegeta attack -timeout=30s -duration=15s -rate=5000/1s -targets=$1 -workers=100 | tee v_results.bin | vegeta report
+
