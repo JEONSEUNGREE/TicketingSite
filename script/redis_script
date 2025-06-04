@@ -1,0 +1,4 @@
+# redis-cli 모니터링용 스크립트
+# 1. 무한 루프
+# 2. Jmeter로 부하를 거는 동안 sortedset에 등록한 대기열과 진행에 정보를 카운팅한다.
+while [ true ]; do date; redis-cli zcard users:queue:default:wait; redis-cli zcard users:queue:default:proceed; sleep 1; done;
